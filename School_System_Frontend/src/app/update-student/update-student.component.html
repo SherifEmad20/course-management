@@ -1,0 +1,30 @@
+<body>
+	<div class="login-form">
+	  <section>
+		<h1>Update student</h1>
+		<div class="content">
+
+		<div class="input-field">
+			<input type="text" [(ngModel)]="student.studentName" studentName = "studentName" placeholder="Student name" autocomplete="nope">
+		</div>
+		<div class="input-field">
+			<input type="text" [(ngModel)]="student.email" email = "email" placeholder="E-mail" autocomplete="nope">
+		</div>
+		<div class="input-field">
+			<input type="password" [(ngModel)]="student.password" password = "password" placeholder="Password" autocomplete="nope">
+		</div>
+		<div class="input-field">
+			<input type="text" [(ngModel)]="student.phoneNumber" phoneNumber = "phoneNumber" placeholder="phone number" autocomplete="nope">
+		</div>
+		<div class="input-field">
+			<input type="text" [(ngModel)]="student.address" address = "address" placeholder="Address" autocomplete="nope">
+		</div>
+		</div>
+		<div class="action">
+		  <button (click)="onSubmit()">Update student</button>
+		</div>
+	  </section>
+	</div>
+	
+	</body>
+	

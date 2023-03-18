@@ -1,0 +1,23 @@
+<body>
+<div class="login-form">
+  <section>
+    <small class="text-danger">{{message}}</small>
+    <h1>Login</h1>
+    <div class="content">
+      <div class="input-field">
+        <input type="email" [(ngModel)]="student.email" email = "email" placeholder="Email" required #email="ngModel" [class.is-invalid]="email.invalid && email.touched">
+        <small class="text-danger"[class.d-none]="email.valid || email.untouched">Email feild is required</small>
+      </div>
+      <div class="input-field">
+        <input type="password" [(ngModel)]="student.password" password = "password" placeholder="Password" required #password="ngModel" [class.is-invalid]="password.invalid && password.touched">
+        <small class="text-danger"[class.d-none]="password.valid || password.untouched">Password feild is required</small>
+      </div>
+    </div>
+    <div class="action">
+      <button (click)="goToSignUpPage()">Register</button>
+      <button (click)="onSubmit()">Sign in</button>
+    </div>
+  </section>
+</div>
+
+</body>

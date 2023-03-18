@@ -1,0 +1,21 @@
+<body>
+	<div class="login-form">
+	  <section>
+		<h1>Add new course</h1>
+		<div class="content">
+			<div class="input-field">
+				<input type="text" [(ngModel)]="course.courseName" courseName = "courseName" placeholder="course Name">
+			</div>
+			<div class="input-field">
+				<input type="email" [(ngModel)]="course.courseCode" courseCode = "courseCode" placeholder="course Code">
+		  	</div>
+		</div>
+
+		<div class="action">
+		  <button (click)="onSubmit()">Add Course</button>
+		</div>
+	  </section>
+	</div>
+	
+	</body>
+	

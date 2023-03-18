@@ -1,0 +1,21 @@
+<body>
+	<div class="login-form">
+	  <section>
+		<h1>Update course</h1>
+		<div class="content">
+
+		<div class="input-field">
+			<input type="text" [(ngModel)]="course.courseName" courseName = "courseName" placeholder="Course name" autocomplete="nope">
+		</div>
+		<div class="input-field">
+			<input type="text" [(ngModel)]="course.courseCode" courseCode = "courseCode" placeholder="Course code" autocomplete="nope">
+		</div>
+		</div>
+		<div class="action">
+		  <button (click)="onSubmit()">Update course</button>
+		</div>
+	  </section>
+	</div>
+	
+	</body>
+	

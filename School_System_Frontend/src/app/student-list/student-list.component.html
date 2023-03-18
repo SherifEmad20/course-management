@@ -1,0 +1,35 @@
+<h2>Students list</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>username</th>
+            <th>email</th>
+            <th>phone number</th>
+            <th>address</th>
+            <th>Courses</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let student of students" >
+            <td> {{student.id}} </td>
+            <td> {{student.studentName}} </td>
+            <td> {{student.email}} </td>
+            <td> {{student.phoneNumber}} </td>
+            <td> {{student.address}} </td>
+            <td>
+                <tr *ngFor="let course of student.courses">
+                    <td>{{course.id}}</td> 
+                    <td>{{course.courseName}}</td> 
+                    <td>{{course.courseCode}}</td> 
+                </tr> 
+           </td>
+            <td>
+                <button (click)="updateStudent(student.id)" class = "btn btn-info">Update</button>
+                <!-- <button (click)="deleteStudent(student.id)" class = "btn btn-danger" style="margin-left: 15px;">Delete</button> -->
+            </td>
+        </tr>
+    </tbody>
+
+</table>

@@ -1,0 +1,30 @@
+<body>
+	<div class="login-form">
+	  <section>
+		<h1>Sign up</h1>
+		<div class="content">
+			<div class="input-field">
+				<input type="text" [(ngModel)]="student.studentName" name = "name" placeholder="Stuednt name">
+			</div>
+			<div class="input-field">
+				<input type="email" [(ngModel)]="student.email" email = "email" placeholder="Email">
+		  	</div>
+              <div class="input-field">
+				<input type="text" [(ngModel)]="student.address" address = "address" placeholder="Address">
+			</div>
+			<div class="input-field">
+				<input type="text" [(ngModel)]="student.phoneNumber" phone = "phone" placeholder="Phone Number">
+			</div>
+		  	<div class="input-field">
+				<input type="password" [(ngModel)]="student.password" password = "password" placeholder="Password">
+			</div>
+		</div>
+
+		<div class="action">
+		  <button (click)="onSubmit()">Register</button>
+		</div>
+	  </section>
+	</div>
+	
+	</body>
+	
